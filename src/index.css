@@ -1,0 +1,148 @@
+
+:root{
+    --primary:#1f3e72;
+    --secondary:rgba(255, 255, 255, 0.78);
+    --black:#131110;
+    --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+    --orange-gradient: Linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+    --blue:#4066ff;
+    --light-blue:#eeeeff;
+    --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.paddings{
+    padding: 1.5rem;
+}
+
+.innerwidth{
+    width: 80%;
+    margin: auto;
+}
+
+.flexcenter{
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexstart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.flexend{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.flexcolcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexcolstart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.flexcolend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.primarytext{
+
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.secondarytext{
+    color: rgba(140 139 139);
+    font-size: 0.9rem;
+}
+
+.orangetext{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.button{
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    color: white;
+    background: var(--blue-gradient);
+    border-radius: 4px;
+    transition: all 300ms ease-in;
+    outline: none;
+    border: none;
+
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+@media (min-width: 1536px){
+ineerwidth{
+    max-width: 1280px;
+    margin: auto;
+}
+}
+
+@media (min-width: 1536px){
+.paddings{
+   padding: 4rem;
+}
+
+}
+@media (min-width: 1280px), (min-width:700px){
+.paddings{
+   padding: 2rem;
+}
+
+}
+
+@media (min-width: 640px){
+  .primarytext{
+    font-size: 1.5rem;
+  }
+  .orangetext{
+    font-size: 1.2rem;
+  }
+
+
+
+}
